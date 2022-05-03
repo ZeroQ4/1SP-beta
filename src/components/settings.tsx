@@ -75,28 +75,15 @@ export const Settings = () => {
   return (
     <>
       <div>
-        Transactions: Settings:
+        
         <div>
-          Slippage:
+          
           <Slippage />
         </div>
       </div>
+      
       <div style={{ display: "grid" }}>
-        Network:{" "}
-        <Select
-          onSelect={setEndpoint}
-          value={endpoint}
-          style={{ marginRight: 8 }}
-        >
-          {ENDPOINTS.map(({ name, endpoint }) => (
-            <Select.Option value={endpoint} key={endpoint}>
-              {name}
-            </Select.Option>
-          ))}
-        </Select>
-      </div>
-      <div style={{ display: "grid" }}>
-        Wallet:{" "}
+      Change Wallet:{" "}
         <Select onSelect={setProvider} value={providerUrl}>
           {WALLET_PROVIDERS.map(({ name, url }) => (
             <Select.Option value={url} key={url}>
