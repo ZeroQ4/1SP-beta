@@ -40,7 +40,7 @@ export const ExchangeView = (props: {}) => {
         right={
           <Popover
             placement="topRight"
-            title="Slippage"
+            title=""
             content={<Settings />}
             trigger="click"
           >
