@@ -83,7 +83,7 @@ export const Settings = () => {
       </div>
       
       <div style={{ display: "grid" }}>
-      Wallet:{" "}
+      {" "}
         <Select onSelect={setProvider} value={providerUrl}>
           {WALLET_PROVIDERS.map(({ name, url }) => (
             <Select.Option value={url} key={url}>
